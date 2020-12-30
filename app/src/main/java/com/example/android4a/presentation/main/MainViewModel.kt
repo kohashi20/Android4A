@@ -13,12 +13,10 @@ import kotlinx.coroutines.withContext
 class MainViewModel(private val createUserUseCase: CreateUserUseCase, private val getUserUseCase: GetUserUseCase) : ViewModel(){
     fun onClickedLogin(emailUser: String, password:String) {
         viewModelScope.launch(Dispatchers.IO) {
-           // getUserUseCase.invoke(emailUser, password)
-           // createUserUseCase.invoke(User("test"))
-            //delay(1000)
-            val user: User? = getUserUseCase.invoke(emailUser)
+
+            val user: User? = getUserUseCase.invoke(emailUser, password)
             val loginStatus = if(user != null){
-                LoginSuccess(user.email)
+                LoginSuccess(user.email, user.password)
             } else {
                 LoginError
             }
@@ -26,7 +24,6 @@ class MainViewModel(private val createUserUseCase: CreateUserUseCase, private va
                 loginLiveData.value = loginStatus
             }
         }
-        //counter.value= (counter.value ?: 0) + 1
     }
 
     val loginLiveData: MutableLiveData<LoginStatus> = MutableLiveData()

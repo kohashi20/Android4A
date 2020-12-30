@@ -1,7 +1,9 @@
 package com.example.android4a.presentation.main
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.Observer
 import com.example.android4a.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -15,9 +17,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         mainViewModel.loginLiveData.observe(this, Observer {
+
             when(it){
                 is LoginSuccess ->{
-                    //todo
+                    var listIntent = Intent(this@MainActivity, ListActivity::class.java)
+                    startActivity(listIntent)
                 }
 
                 LoginError -> {
@@ -28,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                             dialog.dismiss()
                         }
                         .show()
-            }
+                }
             }
         })
         login_button.setOnClickListener{
