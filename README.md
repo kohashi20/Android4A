@@ -21,16 +21,17 @@ L'application est codée en Kotlin.
 * Architecture MVVM
 * Clean Architecture
 * Utilisation d’une réelle BDD avec Room
-* Utilisation Api REST (essayé)
+* Utilisation Api Rest (essayé)
 * Affichage d’une liste (essayé, avec le détail d'un élément et le stockage de données en cache mais cela a provoqué des erreurs)
 * Design
 * Tests unitaires
-* Page Login (essayé mais je n'ai pu continuer car cela a fait stopper l'application)
+* Page Login (essayé mais je n'ai pu continuer car l'ajout du mot de passe a fait stopper l'application)
 * Singleton
 * Design Patterns
 * Principes (SOLID, KISS, DRY)
 
 ## Fonctionnalités
+* Ces fonctionnalités sont applicables lorsque l'on élimine les problèmes de mot de passe et de l'API Rest, ainsi que de l'affichage de la liste.
 * Premier écran, dès le lancement de l'application
 
 ![alt text](android/Capture.PNG "1e écran")
