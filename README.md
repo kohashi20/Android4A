@@ -17,7 +17,7 @@ L'application est codée en Kotlin.
 * Stockage de données (SharedPreferences)
 
 ## Consignes respectées
-* Language Kotlin
+* Langage Kotlin
 * Architecture MVVM
 * Clean Architecture
 * Utilisation d’une réelle BDD avec Room
@@ -35,7 +35,7 @@ L'application est codée en Kotlin.
 
 ![alt text](android/Capture.PNG "1e écran")
 
-* Une fois que l'on clique sur les champs
+* Une fois que l'on écrit dans les champs
 
 ![alt text](android/Capture2.PNG "Champs")
 
