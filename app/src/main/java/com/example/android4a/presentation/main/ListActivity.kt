@@ -11,7 +11,7 @@ import com.example.android4a.R
 import com.example.android4a.Singletons
 
 class ListActivity : AppCompatActivity(){
-private var recyclerView: RecyclerView
+private var recyclerView: RecyclerView,
 private var mAdapter:ListAdapter,
 private var layoutManager:RecyclerView.LayoutManager,
 private var controller:MainController
