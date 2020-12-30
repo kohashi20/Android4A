@@ -1,7 +1,7 @@
 # Android4A, Application Android
-Auteure: Céline Lam
-Pseudo Github: kohashi20
-Classe: 4A
+* Auteure: Céline Lam
+* Pseudo Github: kohashi20
+* Classe: 4A
 
 ## Présentation
 Il s'agit d'une application qui affiche une liste de musique, précisément des albums de Coldplay. Pour se faire, j'ai utilisé l'API TheAudioDB.
