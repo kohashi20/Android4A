@@ -35,3 +35,10 @@ L'application est codée en Kotlin.
 
 ![alt text](android/Capture.PNG "1e écran")
 
+* Une fois que l'on clique sur les champs
+
+![alt text](android/Capture2.PNG "Champs")
+
+* Comme l'utilisateur n'est pas renseigné dans la base de données, nous obtenons cette erreur
+
+![alt text](android/Capture3.PNG "Erreur")
