@@ -33,5 +33,5 @@ L'application est codée en Kotlin.
 ## Fonctionnalités
 * Premier écran, dès le lancement de l'application
 
-![alt text](Images/Capture.PNG "1e écran")
+![alt text](Android/Capture.PNG "1e écran")
 
